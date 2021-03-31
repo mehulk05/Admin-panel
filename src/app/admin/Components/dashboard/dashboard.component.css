@@ -1,0 +1,53 @@
+.bg-theme2 {
+    background-color: #be6b40 !important;
+}
+
+.container,
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.text-success {
+    color: #4CAF50 !important;
+}
+
+.bg-success {
+    background-color: #4CAF50 !important;
+}
+
+.svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -.125em;
+}
+
+.main-card-view i,
+.main-card-view .fa,
+.main-card-view svg,
+.main-card-view .fas {
+    position: absolute;
+    font-size: 6rem;
+    top: 0;
+    left: 10px;
+    opacity: .3;
+}
+
+.svg-inline--fa.fa-w-20 {
+    width: 1.25em;
+}
+
+.svg-inline--fa.fa-w-14 {
+    width: .875em;
+}
+
+.card-header {
+    background-color: #E6EEF1;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}

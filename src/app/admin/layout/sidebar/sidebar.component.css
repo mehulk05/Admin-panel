@@ -1,0 +1,140 @@
+#layoutSidenav_nav {
+    width: 225px;
+    height: 100vh;
+    z-index: 1038;
+}
+
+#layoutSidenav_nav .sb-sidenav {
+    padding-top: 56px;
+    background-color: #03506F;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.sb-sidenav-menu .nav-link.active {
+    color: #fff;
+    font-weight: bold;
+}
+
+.sb-sidenav {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    flex-wrap: nowrap;
+}
+
+.sb-sidenav-menu {
+    overflow-y: auto;
+}
+
+.sb-sidenav .sb-sidenav-menu {
+    flex-grow: 1;
+}
+
+.sb-sidenav-menu .nav {
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.sb-sidenav-menu-heading {
+    padding: 1.75rem 1rem 0.75rem;
+    font-size: 0.75rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.sb-sidenav-menu-heading {
+    color: #ffffff;
+    border-bottom: 1px solid #03506F;
+}
+
+.nav .nav-link {
+    display: flex;
+    align-items: center;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    position: relative;
+}
+
+.sb-sidenav-menu .nav-link {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.sb-nav-link-icon {
+    font-size: 0.9rem;
+    margin-right: 0.5rem;
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.sb-nav-link-icon svg {
+    width: 1.125em;
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -.125em;
+}
+
+.svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -.125em;
+}
+
+.svg-inline--fa.fa-w-12 {
+    width: .75em;
+}
+
+.sb-sidenav-menu-nested {
+    margin-left: 1.5rem;
+    flex-direction: column;
+}
+
+.nav-link.collapsed .sb-sidenav-collapse-arrow {
+    transform: rotate( -90deg);
+}
+
+.nav .nav-link .sb-sidenav-collapse-arrow {
+    display: inline-block;
+    margin-left: auto;
+    transition: transform 0.15s ease;
+}
+
+.nav-link .sb-sidenav-collapse-arrow {
+    color: rgba(255, 255, 255, 0.25);
+}
+
+.svg-inline--fa.fa-w-10 {
+    width: .625em;
+}
+
+.sb-sidenav-menu .nav-link:hover {
+    color: #fff;
+}
+
+.sb-sidenav-footer {
+    padding: 0.75rem;
+    flex-shrink: 0;
+    background-color: #E6EEF1;
+}
+
+.text-primary {
+    color: #03506F !important;
+}
+
+#layoutSidenav_nav {
+    flex-basis: 225px;
+    flex-shrink: 0;
+    transition: transform 0.15s ease-in-out;
+}
+
+
+/* #layoutSidenav_nav {
+    transform: translateX(0);
+}
+
+.sb-sidenav-toggled #layoutSidenav_nav {
+    transform: translateX(-225px);
+} */

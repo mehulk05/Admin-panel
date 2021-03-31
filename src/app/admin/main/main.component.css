@@ -1,0 +1,39 @@
+/*  */
+
+.sb-sidenav-toggled .sidebar {
+    transform: translateX(-225px);
+}
+
+.sidebar {
+    transform: translateX(0px);
+    flex-basis: 225px;
+    flex-shrink: 0;
+    transition: transform 0.15s ease-in-out;
+}
+
+.wrapper {
+    display: flex;
+}
+
+#layoutSidenav_content {
+    top: 56px;
+}
+
+.sb-sidenav-toggled #layoutSidenav_content {
+    margin-left: -225px;
+}
+
+#layoutSidenav_content {
+    margin-left: 0;
+    transition: margin 0.15s ease-in-out;
+}
+
+#layoutSidenav_content {
+    position: relative;
+    display: block;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 0;
+    flex-grow: 1;
+    min-height: calc(100vh - 56px);
+}

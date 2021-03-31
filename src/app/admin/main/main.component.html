@@ -1,0 +1,11 @@
+<app-header></app-header>
+<div class="wrapper" [ngClass]="showHideMenuFlag?'' : 'sb-sidenav-toggled' ">
+    <div class="sidebar">
+        <app-sidebar></app-sidebar>
+    </div>
+
+    <div class="main-content" id="layoutSidenav_content">
+        <router-outlet></router-outlet>
+        <app-footer></app-footer>
+    </div>
+</div>
