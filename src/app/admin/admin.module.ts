@@ -9,11 +9,13 @@ import { SharedModule } from '../shared/shared.module';
 import { DashboardComponent } from './Components/dashboard/dashboard.component';
 import { OffersComponent } from './Components/offers/offers.component';
 import { ContentModule } from './Components/content/content.module';
+import { AddOfferComponent } from './Components/add-offer/add-offer.component';
+import { ReportsComponent } from './Components/reports/reports.component';
 
 
 
 @NgModule({
-  declarations: [MainComponent, HeaderComponent, FooterComponent, SidebarComponent, DashboardComponent, OffersComponent],
+  declarations: [MainComponent, HeaderComponent, FooterComponent, SidebarComponent, DashboardComponent, OffersComponent, AddOfferComponent, ReportsComponent],
   imports: [
     CommonModule,
     AdminRoutingModule,

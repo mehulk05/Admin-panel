@@ -1,0 +1,157 @@
+<main>
+    <div class="container-fluid">
+        <div class="my-4">
+            <h1 class="text-primary">Category List</h1>
+            <p>Use category list as to describe your overall core business from the provided list. Click the name of the category where you want to add a list item.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-xl-12 col-md-12">
+                <div class="card mb-4">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <span><i class="fas fa-chalkboard-teacher mr-1"></i>
+                           Manage Category</span>
+                        <a routerLink="/admin/categories/add-new-category" class="btn text-white btn-success rounded-pill px-3">
+                            <i class="fa fa-plus-circle" aria-hidden="true"></i> Add Category</a>
+                    </div>
+
+
+                    <div class="card-body">
+                        <div class="row justify-content-between search-card">
+                            <div class="col-sm-12 col-md-6 col-lg-3">
+                                <label class="mb-0 mr-2">Show </label>
+
+                                <select name="dataTable_length" aria-controls="dataTable" class="form-control form-control-sm" tabindex="-98">
+                                <option value="10">5</option>
+                                <option value="25">10</option>
+                                <option value="50">20</option>
+                            </select>
+                            </div>
+
+                            <div class="col-sm-12 col-md-6 col-lg-3 form-group">
+                                <label class="mb-0 mr-2">Search </label>
+
+                                <input type="search" class="form-control form-control-sm" placeholder="Enter Video Name" aria-controls="">
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-between search-card">
+                            <div class="col-12">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered" width="100%">
+                                        <thead>
+                                            <tr>
+                                                <th><input type="checkbox" class="" id=""></th>
+                                                <th>Course Detail</th>
+                                                <th>Code</th>
+                                                <th>Category</th>
+                                                <th class="text-right">Action</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr>
+                                                <td><input type="checkbox" class="" id=""></td>
+                                                <td>
+                                                    <div class="user-card d-flex align-items-center">
+                                                        <div class="user-view">
+                                                            <img src="./assets/images/user-avatar.jpeg" class="img-fluid mr-3" width="80">
+                                                        </div>
+
+                                                        <div class="user-content">
+                                                            <h5>Course Name</h5>
+                                                            <p class="mb-0">Course Description</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>CJ123</td>
+                                                <td>Courses</td>
+                                                <td class="text-right">
+                                                    <a href="" class="btn btn-primary">
+                                                        <i class="fas fa-eye" title="View User"></i>
+                                                    </a>
+                                                    <a href="" class="btn btn-success">
+                                                        <i class="fas fa-edit" title="Edit User"></i></a>
+                                                    <a href="" class="btn btn-danger">
+                                                        <i class="fas fa-trash" title="Delete User"></i></a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><input type="checkbox" class="" id=""></td>
+                                                <td>
+                                                    <div class="user-card d-flex align-items-center">
+                                                        <div class="user-view">
+                                                            <img src="./assets/images/user-avatar.jpeg" class="img-fluid mr-3" width="80">
+                                                        </div>
+
+                                                        <div class="user-content">
+                                                            <h5>Course Name</h5>
+                                                            <p class="mb-0">Course Description</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>CJ123</td>
+                                                <td>Courses</td>
+                                                <td class="text-right">
+                                                    <a href="" class="btn btn-primary">
+                                                        <i class="fas fa-eye" title="View User"></i>
+                                                    </a>
+                                                    <a href="" class="btn btn-success">
+                                                        <i class="fas fa-edit" title="Edit User"></i></a>
+                                                    <a href="" class="btn btn-danger">
+                                                        <i class="fas fa-trash" title="Delete User"></i></a>
+                                                </td>
+                                            </tr>
+
+                                            <tr>
+                                                <td><input type="checkbox" class="" id=""></td>
+                                                <td>
+                                                    <div class="user-card d-flex align-items-center">
+                                                        <div class="user-view">
+                                                            <img src="./assets/images/user-avatar.jpeg" class="img-fluid mr-3" width="80">
+                                                        </div>
+
+                                                        <div class="user-content">
+                                                            <h5>Course Name</h5>
+                                                            <p class="mb-0">Course Description</p>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>CJ123</td>
+                                                <td>Courses</td>
+                                                <td class="text-right">
+                                                    <a href="" class="btn btn-primary">
+                                                        <i class="fas fa-eye" title="View User"></i>
+                                                    </a>
+                                                    <a href="" class="btn btn-success">
+                                                        <i class="fas fa-edit" title="Edit User"></i></a>
+                                                    <a href="" class="btn btn-danger">
+                                                        <i class="fas fa-trash" title="Delete User"></i></a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-sm-12 col-md-5">
+                                <div class="dataTables_info" id="dataTable_info" role="status" aria-live="polite">Showing 1 to 10 of 57 entries</div>
+                            </div>
+
+                            <div class="col-sm-12 col-md-7">
+                                <ng-container *ngFor="let dtaa of dummyData | paginate: config"></ng-container>
+                                <div class="dataTables_paginate paging_simple_numbers d-flex justify-content-end">
+                                    <pagination-controls (pageChange)="pageChanged($event)"></pagination-controls>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

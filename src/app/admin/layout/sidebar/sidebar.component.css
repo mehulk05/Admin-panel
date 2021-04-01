@@ -7,11 +7,11 @@
 #layoutSidenav_nav .sb-sidenav {
     padding-top: 56px;
     background-color: #03506F;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgba(255, 255, 255, 0.5) !important;
 }
 
 .sb-sidenav-menu .nav-link.active {
-    color: #fff;
+    color: #fff !important;
     font-weight: bold;
 }
 
@@ -56,7 +56,7 @@
 }
 
 .sb-sidenav-menu .nav-link {
-    color: rgba(255, 255, 255, 0.7);
+    color: rgba(255, 255, 255, 0.7) !important;
 }
 
 .sb-nav-link-icon {
@@ -111,7 +111,7 @@
 }
 
 .sb-sidenav-menu .nav-link:hover {
-    color: #fff;
+    color: #fff !important;
 }
 
 .sb-sidenav-footer {

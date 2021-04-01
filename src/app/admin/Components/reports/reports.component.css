@@ -1,0 +1,10 @@
+.main-card-view i,
+.main-card-view .fa,
+.main-card-view svg,
+.main-card-view .fas {
+    position: absolute;
+    font-size: 6rem;
+    top: 0;
+    left: 10px;
+    opacity: .3;
+}

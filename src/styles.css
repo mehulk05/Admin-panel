@@ -1,3 +1,143 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "../node_modules/bootstrap-select/dist/css/bootstrap-select.min.css";
+.container,
+.container-fluid,
+.container-sm,
+.container-md,
+.container-lg,
+.container-xl {
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+}
+
+.btn-primary {
+    color: #fff !important;
+    background-color: #03506F !important;
+    border-color: #03506F !important;
+}
+
+.btn-success {
+    color: #fff !important;
+    background-color: #4CAF50 !important;
+    border-color: #4CAF50 !important;
+}
+
+.btn-danger {
+    color: #fff !important;
+}
+
+.btn-light {
+    color: #212529;
+    background-color: #f8f9fa;
+    border-color: #f8f9fa;
+}
+
+.btn-theme2 {
+    color: #fff !important;
+    background-color: #be6b40 !important;
+    border-color: #be6b40 !important;
+}
+
+.buttons a.btn {
+    margin-right: 5px;
+}
+
+.bg-theme2 {
+    background-color: #be6b40 !important;
+}
+
+
+/* -------------------------------------------------------------------------- */
+
+
+/*                               table page css                               */
+
+
+/* -------------------------------------------------------------------------- */
+
+.card-header {
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 0;
+    background-color: #E6EEF1 !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.search-card label,
+.search-card select.form-control.form-control-sm,
+.search-card input {
+    display: inline-block;
+}
+
+.search-card input,
+.search-card select.form-control.form-control-sm {
+    width: 80%;
+}
+
+.table th,
+.table td {
+    padding: 0.75rem;
+    vertical-align: middle !important;
+    border-top: 1px solid #dee2e6;
+}
+
+.text-right a.btn {
+    margin-right: 5px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    margin-bottom: 0px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+input:checked+.slider {
+    background-color: #2196F3;
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider::before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round::before {
+    border-radius: 50%;
+}
+
+.slider::before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}

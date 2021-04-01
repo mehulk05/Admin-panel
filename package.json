@@ -19,9 +19,13 @@
     "@angular/platform-browser": "~11.1.2",
     "@angular/platform-browser-dynamic": "~11.1.2",
     "@angular/router": "~11.1.2",
+    "@fortawesome/fontawesome-free": "^5.15.3",
     "bootstrap": "^4.6.0",
+    "bootstrap-select": "^1.13.18",
     "chart.js": "^2.9.4",
+    "ckeditor4-angular": "^2.1.0",
     "jquery": "^3.6.0",
+    "ngx-pagination": "^5.0.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.3"

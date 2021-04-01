@@ -1,0 +1,109 @@
+<main>
+    <div class="container-fluid">
+        <h1 class="my-4 text-primary">Reports </h1>
+        <div class="row">
+            <div class="col-xl-4 col-md-4">
+                <div class="card main-card-view bg-theme2 text-white mb-4">
+                    <i class="fas fa-video"></i>
+                    <div class="card-body d-flex align-items-center justify-content-between">
+                        <strong class="text-uppercase">Total number of Live Courses Sale</strong>
+                        <span class="display-4">223</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-md-4">
+                <div class="card main-card-view bg-success text-white mb-4">
+                    <i class="fas fa-microphone"></i>
+                    <div class="card-body d-flex align-items-center justify-content-between">
+                        <strong class="text-uppercase">TOTAL NUMBER OF RECORDED COURSES SALE</strong>
+                        <span class="display-4">223</span></div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-md-4">
+                <div class="card main-card-view bg-theme2 text-white mb-4">
+                    <i class="fas fa-file-pdf"></i>
+                    <div class="card-body d-flex align-items-center justify-content-between">
+                        <strong class="text-uppercase">Number of Visitors</strong>
+                        <span class="display-4">400</span></div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ----------------------------------------------------------------------- -->
+        <!--                                  graph                                  -->
+        <!-- ----------------------------------------------------------------------- -->
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card mb-4">
+                    <div class="card-header d-flex align-items-center justify-content-between">
+                        <span>
+                            <i class="fas fa-video mr-1"></i> 
+                            Graphical view of Live Courses Sale</span>
+                        <div class="dataTables_length d-flex align-items-center">
+                            <label class="mb-0 mr-2">Show </label>
+
+                            <select name="dataTable_length" aria-controls="dataTable" class="custom-select custom-select-sm form-control form-control-sm" tabindex="-98">
+                                <option value="10">Last Month</option>
+                                <option value="25">Last 3 Months</option>
+                                <option value="50">Last 6 Months</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="card-body">
+                        <canvas id="myChart" width="700" height="250" #mychart></canvas>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col-lg-4">
+                <div class="card mb-4">
+                    <div class="card-header d-flex align-items-center justify-content-between">
+                        <span>
+                            <i class="fas fa-microphone mr-1"></i> Graphical view of Recorded Courses</span>
+                        <div class="dataTables_length d-flex align-items-center">
+                            <label class="mb-0 mr-2">Show </label>
+
+                            <select name="dataTable_length" aria-controls="dataTable" class="custom-select custom-select-sm form-control form-control-sm" tabindex="-98">
+                                <option value="10">Last Month</option>
+                                <option value="25">Last 3 Months</option>
+                                <option value="50">Last 6 Months</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="card-body">
+                        <canvas id="myChart2" width="700" height="250" #mychart2></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card mb-4">
+                    <div class="card-header d-flex align-items-center justify-content-between">
+                        <span>
+                            <i class="fas fa-file-pdf mr-1"></i> Total Purchases Courses</span>
+                        <div class="dataTables_length d-flex align-items-center">
+                            <label class="mb-0 mr-2">Show </label>
+
+                            <select name="dataTable_length" aria-controls="dataTable" class="custom-select custom-select-sm form-control form-control-sm" tabindex="-98">
+                                <option value="10">Last Month</option>
+                                <option value="25">Last 3 Months</option>
+                                <option value="50">Last 6 Months</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="card-body">
+                        <canvas id="myChart2" width="700" height="250" #mychart2></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</main>

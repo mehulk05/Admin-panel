@@ -1,0 +1,97 @@
+<main>
+    <div class="container-fluid">
+        <div class="my-4">
+            <h1 class="text-primary">E-Books</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-xl-12 col-md-12">
+                <div class="card mb-4">
+                    <div class="card-header d-flex justify-content-between align-items-center">
+                        <span><i class="fas fa-file-pdf mr-1"></i>
+                           E-Books</span>
+                        <a routerLink="/admin/products/add-ebook" class="btn text-white btn-success rounded-pill px-3">
+                            <i class="fa fa-plus-circle" aria-hidden="true"></i> E-books</a>
+                    </div>
+
+
+                    <div class="card-body">
+                        <div class="row justify-content-between search-card">
+                            <div class="col-sm-12 col-md-6 col-lg-3">
+                                <label class="mb-0 mr-2">Show </label>
+
+                                <select name="dataTable_length" aria-controls="dataTable" class="form-control form-control-sm" tabindex="-98">
+                                <option value="10">5</option>
+                                <option value="25">10</option>
+                                <option value="50">20</option>
+                            </select>
+                            </div>
+
+                            <div class="col-sm-12 col-md-6 col-lg-3 form-group">
+                                <label class="mb-0 mr-2">Search </label>
+
+                                <input type="search" class="form-control form-control-sm" placeholder="Enter Video Name" aria-controls="">
+                            </div>
+                        </div>
+
+                        <div class="row justify-content-between search-card">
+                            <div class="col-12">
+                                <div class="table-responsive">
+                                    <table class="table table-bordered" width="100%">
+                                        <thead>
+                                            <tr>
+                                                <th>S.No</th>
+                                                <th>Preview Combo</th>
+                                                <th>Combo Name</th>
+                                                <th>Trainers Name</th>
+                                                <th>Original Price</th>
+                                                <th>Offers Price</th>
+                                                <th>Combo Material</th>
+                                                <th>Status</th>
+                                                <th class="text-right">Action</th>
+                                            </tr>
+                                        </thead>
+
+                                        <tbody>
+                                            <tr>
+                                                <td>1</td>
+                                                <td>
+                                                    <div class="user-card d-flex align-items-center">
+                                                        <div class="user-view">
+                                                            <img src="./assets/images/user-avatar.jpeg" class="img-fluid mr-3" width="80">
+                                                        </div>
+
+                                                    </div>
+                                                </td>
+                                                <td>UPSSSC JE Civil + UPPSC AE Eng Combo pack</td>
+                                                <td>Mr. Saurabh, Mr. Avinash </td>
+                                                <td>3000</td>
+                                                <td>2000</td>
+                                                <td>Pdf/Doc</td>
+                                                <td>
+                                                    <label class="switch">
+                                                   <input type="checkbox" checked="">
+                                                   <span class="slider round"></span>
+                                                </label>
+                                                </td>
+                                                <td class="text-right">
+                                                    <a href="" class="btn btn-primary">
+                                                        <i class="fas fa-eye" title="View User"></i>
+                                                    </a>
+                                                    <a href="" class="btn btn-success">
+                                                        <i class="fas fa-edit" title="Edit User"></i></a>
+                                                    <a href="" class="btn btn-danger">
+                                                        <i class="fas fa-trash" title="Delete User"></i></a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
