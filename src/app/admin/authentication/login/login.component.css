@@ -1,0 +1,21 @@
+#layoutAuthentication {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #03506F !important;
+}
+
+#layoutAuthentication #layoutAuthentication_content {
+    min-width: 0;
+    flex-grow: 1;
+}
+
+.bg-success {
+    background-color: #4CAF50 !important;
+}
+
+#layoutAuthentication_content a {
+    color: #03506F;
+    text-decoration: none;
+    background-color: transparent;
+}

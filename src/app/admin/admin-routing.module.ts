@@ -4,6 +4,7 @@ import { AddOfferComponent } from './Components/add-offer/add-offer.component';
 import { DashboardComponent } from './Components/dashboard/dashboard.component';
 import { OffersComponent } from './Components/offers/offers.component';
 import { ReportsComponent } from './Components/reports/reports.component';
+import { SettingsComponent } from './Components/settings/settings.component';
 import { MainComponent } from './main/main.component';
 
 const routes: Routes = [
@@ -17,6 +18,9 @@ const routes: Routes = [
           pathMatch: 'full'
        },
        { path: 'add-offer', component: AddOfferComponent },
+
+      
+
        { path : 'categories', loadChildren: ()=> 
        import('./Components/categories/categories.module').then(mod => mod.CategoriesModule)},
 
@@ -41,6 +45,7 @@ const routes: Routes = [
         { path : 'sales', loadChildren: ()=> 
         import('./Components/sales/sales.module').then(mod => mod.SalesModule)},
 
+        { path: 'settings', component: SettingsComponent },
 
         { path : 'users', loadChildren: ()=> 
         import('./Components/users/users.module').then(mod => mod.UsersModule)},

@@ -11,11 +11,12 @@ import { OffersComponent } from './Components/offers/offers.component';
 import { ContentModule } from './Components/content/content.module';
 import { AddOfferComponent } from './Components/add-offer/add-offer.component';
 import { ReportsComponent } from './Components/reports/reports.component';
+import { SettingsComponent } from './Components/settings/settings.component';
 
 
 
 @NgModule({
-  declarations: [MainComponent, HeaderComponent, FooterComponent, SidebarComponent, DashboardComponent, OffersComponent, AddOfferComponent, ReportsComponent],
+  declarations: [MainComponent, HeaderComponent, FooterComponent, SidebarComponent, DashboardComponent, OffersComponent, AddOfferComponent, ReportsComponent, SettingsComponent],
   imports: [
     CommonModule,
     AdminRoutingModule,
