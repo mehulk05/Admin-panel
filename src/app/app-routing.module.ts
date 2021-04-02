@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { PageNotFoundComponent } from './reusable/page-not-found/page-not-found.component';
 
 const routes: Routes = [
   {
@@ -12,6 +13,8 @@ import('../app/admin/admin.module').then(mod => mod.AdminModule)},
 
 { path : 'auth', loadChildren: ()=> 
 import('./admin/authentication/authentication.module').then(mod => mod.AuthenticationModule)},
+
+{ path: '**', component: PageNotFoundComponent },
 
 ];
 
