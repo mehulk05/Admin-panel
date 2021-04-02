@@ -9,10 +9,14 @@ const routes: Routes = [
  },
   { path : 'admin', loadChildren: ()=> 
 import('../app/admin/admin.module').then(mod => mod.AdminModule)},
+
+{ path : 'auth', loadChildren: ()=> 
+import('./admin/authentication/authentication.module').then(mod => mod.AuthenticationModule)},
+
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes ,{ useHash: true })],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
