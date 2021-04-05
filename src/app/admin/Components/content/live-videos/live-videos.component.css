@@ -16,3 +16,7 @@ i.fas.fa-trash.btn.btn-danger {
 .user-card p {
     margin: 0;
 }
+
+.dropdown-menu.dropdown-menu-right {
+    min-width: 6rem !important;
+}

@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { AfterViewInit, Component, OnInit } from '@angular/core';
+import * as $ from 'jquery';
 
 @Component({
   selector: 'app-live-videos',
@@ -11,5 +12,6 @@ export class LiveVideosComponent implements OnInit {
 
   ngOnInit(): void {
   }
+
 
 }

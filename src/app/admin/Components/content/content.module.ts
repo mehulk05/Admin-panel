@@ -7,13 +7,15 @@ import { RecordedVideosComponent } from './recorded-videos/recorded-videos.compo
 import { PdfDocsComponent } from './pdf-docs/pdf-docs.component';
 import { AddVideoComponent } from './add-video/add-video.component';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { TooltipModule } from 'ng2-tooltip-directive';
 
 
 @NgModule({
   declarations: [LiveVideosComponent, RecordedVideosComponent, PdfDocsComponent, AddVideoComponent],
   imports: [
     CommonModule,
-    ContentRoutingModule,SharedModule
+    ContentRoutingModule,SharedModule,
+    TooltipModule
   ]
 })
 export class ContentModule { }

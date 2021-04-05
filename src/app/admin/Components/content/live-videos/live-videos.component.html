@@ -18,7 +18,7 @@
                     <div class="card-body">
                         <div class="row justify-content-between search-card">
                             <div class="col-sm-12 col-md-6 col-lg-3">
-                                <label class="mb-0 mr-2">Show </label>
+                                <label class="mb-0 mr-2">Categroy </label>
 
                                 <select name="dataTable_length" aria-controls="dataTable" class="form-control form-control-sm" tabindex="-98">
                                     <option value="10"> Category </option>
@@ -41,6 +41,16 @@
                                 </select>
                             </div>
 
+                            <div class="col-sm-12 col-md-6 col-lg-3">
+                                <label class="mb-0 mr-2">Filter </label>
+
+                                <select name="dataTable_length" aria-controls="dataTable" class="form-control form-control-sm" tabindex="-98">
+                                    <option value="10">Live</option>
+                                    <option value="25">Recorded</option>
+                                    <option value="50">20</option>
+                                </select>
+                            </div>
+
                             <div class="col-sm-12 col-md-6 col-lg-3 form-group">
                                 <label class="mb-0 mr-2">Search </label>
 
@@ -58,10 +68,12 @@
                                                 <th>Video</th>
                                                 <th>Source</th>
                                                 <th>Video Title</th>
+                                                <th>Description</th>
                                                 <th>Taught By</th>
+                                                <th>Category</th>
                                                 <th>Visibility </th>
                                                 <th>Published At</th>
-                                                <th>Duration</th>
+
                                                 <th>Status</th>
                                                 <th class="text-right">Action</th>
                                             </tr>
@@ -75,17 +87,25 @@
                                                         <div class="user-view">
                                                             <img src="./assets/images/user-avatar.jpeg" class="img-fluid mr-3" width="80">
                                                             <p><b>Course Name</b></p>
-                                                            <p>Course description is video table page</p>
+                                                            <p>
+                                                                3:00 pm
+                                                            </p>
                                                         </div>
 
                                                     </div>
                                                 </td>
                                                 <td>AWS</td>
-                                                <td>Course Name</td>
+                                                <td>Video Name</td>
+                                                <td>Video Descrioption</td>
                                                 <td>Mr. Avinash</td>
-                                                <td>Public</td>
-                                                <td>24/03/2021</td>
-                                                <td>03:00 </td>
+                                                <td><button tooltip="Recorded:1, Public : 1 " placement="top">Live +1</button></td>
+                                                <td>
+                                                    Public
+                                                </td>
+                                                <td>
+                                                    <p>24/03/2021</p>
+                                                    <p>03:00</p>
+                                                </td>
                                                 <td>
                                                     <label class="switch">
                                                         <input type="checkbox" checked="">
@@ -96,18 +116,18 @@
                                                     <ul class="navbar-nav ml-auto">
                                                         <li class="nav-item">
                                                             <a class="btn btn-primary" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                                                Acion <i class="fa fa-ellipsis-v" aria-hidden="true"></i></a>
+                                                                <i class="fa fa-ellipsis-v" aria-hidden="true"></i> </a>
 
                                                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="userDropdown">
                                                                 <a href="" class="dropdown-item">
-                                                                    <i class="fas fa-eye btn btn-primary" title="View User"></i> View </a>
+                                                                    <i class="fas fa-eye btn btn-primary" title="View User"></i> </a>
                                                                 <a href="" class="dropdown-item">
-                                                                    <i class="fas fa-edit btn btn-success" title="Edit User"></i>Edit</a>
+                                                                    <i class="fas fa-edit btn btn-success" title="Edit User"></i></a>
                                                                 <a href="" class="dropdown-item">
-                                                                    <i class="fas fa-trash btn btn-danger" title="Delete User"></i>Delete</a>
+                                                                    <i class="fas fa-trash btn btn-danger" title="Delete User"></i></a>
 
                                                                 <a href="" class="dropdown-item" data-toggle="modal" data-target="#showVideo">
-                                                                    <i class="fa fa-video-camera btn btn-info" title="Delete User"></i>View Video</a>
+                                                                    <i class="fa fa-video-camera btn btn-info" title="Delete User"></i></a>
                                                             </div>
                                                         </li>
                                                     </ul>
@@ -178,8 +198,7 @@
 
                 </div>
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                    <button type="button" class="btn btn-primary">Save changes</button>
+
                 </div>
             </div>
         </div>
